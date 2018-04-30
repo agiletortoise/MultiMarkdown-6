@@ -1,0 +1,2302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1A24C7C1F5B6431C9F0578DF /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FF4B94198DC14F4794681800 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				4468F6A59B164B0484A9DAD4 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		66EDEA69CD524311A22D3555 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 67332C9540E6462BB1AD16B4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				36658AFE7531407EBC7C3CD1 /* CMake Rules */,
+			);
+			dependencies = (
+				A56F0A720A26481D8933E811 /* PBXTargetDependency */,
+				156D606FBA024E049A597A06 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		6ACA654131264BFF9E9E7022 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 85B6D097DE914F65B665C63D /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				673D0A20254A4F9D9099E267 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				68A8A311BE44408C9E7D15F0 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		FDE755CD78024D8A834D9B1C /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E0B02AB64463403BB637DC06 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				BDA3A3486DEA49CE81203118 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				68A82055D0B24DF7B25B1E06 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		041D8A582C2946689C82F734 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FBBC5C22EBB4BAFBDAB942E /* zip.h */; };
+		0628D3F38A6D49C0BCC6F389 /* argtable3.c in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB937BA44F46758BB3B372 /* argtable3.c */; };
+		068B3C81B0844E55BD8872FF /* char.h in Headers */ = {isa = PBXBuildFile; fileRef = 175DE466842942169BD40631 /* char.h */; };
+		07463900DF4C42C8A8558BEB /* miniz.h in Headers */ = {isa = PBXBuildFile; fileRef = 392B1776D430477F9D55C46F /* miniz.h */; };
+		088BAA10DBEE47BCB18925BB /* latex.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C7DE9AB35547E59B48E2D1 /* latex.h */; };
+		0F8EB24527E343B5A6135DB6 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F3F59382124FA997890864 /* html.h */; };
+		186F64EC747D4FE3838DA359 /* memoir.h in Headers */ = {isa = PBXBuildFile; fileRef = EE86CAF7B45D416DAE47DD25 /* memoir.h */; };
+		2B35646E14744625A4009EDF /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = AB64A8EE5EA04AE58B918E8E /* version.h */; };
+		31E76AE39E2B4D6A89BDA878 /* epub.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD2542338C24E33AD8C68CF /* epub.h */; };
+		3706BAB51F0E7989003A66F5 /* aho-corasick.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F080CC5E54A4990BE4E7FB8 /* aho-corasick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAB61F0E7989003A66F5 /* beamer.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A35C499A97409587493022 /* beamer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAB71F0E7989003A66F5 /* char.h in Headers */ = {isa = PBXBuildFile; fileRef = 175DE466842942169BD40631 /* char.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAB81F0E7989003A66F5 /* critic_markup.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0C7A08AEC84FC0B4BE3961 /* critic_markup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAB91F0E7989003A66F5 /* epub.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD2542338C24E33AD8C68CF /* epub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BABA1F0E7989003A66F5 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F3F59382124FA997890864 /* html.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BABB1F0E7989003A66F5 /* d_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DCA9173F0B4D419D332689 /* d_string.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BABC1F0E7989003A66F5 /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = B47EF14D325F4ACF956BE4F7 /* libMultiMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BABD1F0E7989003A66F5 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = A4B8F63B4FBC4FEEBD2FB771 /* token.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BABE1F0E7989003A66F5 /* latex.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C7DE9AB35547E59B48E2D1 /* latex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BABF1F0E7989003A66F5 /* lexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1280E141CC66480D97CF445F /* lexer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAC01F0E7989003A66F5 /* memoir.h in Headers */ = {isa = PBXBuildFile; fileRef = EE86CAF7B45D416DAE47DD25 /* memoir.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAC11F0E7989003A66F5 /* miniz.h in Headers */ = {isa = PBXBuildFile; fileRef = 392B1776D430477F9D55C46F /* miniz.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAC21F0E7989003A66F5 /* mmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 09BD1E9F2CE84ABCB28A2CC5 /* mmd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAC31F0E7989003A66F5 /* object_pool.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C8142A36BA4B1A8FFDB326 /* object_pool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAC41F0E7989003A66F5 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 1936C520832B42C29219C90D /* scanners.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAC51F0E7989003A66F5 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D1438E97BB4DD19B7B6437 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAC61F0E7989003A66F5 /* token_pairs.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C58ECEE0CF74322AC8F2D21 /* token_pairs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAC71F0E7989003A66F5 /* transclude.h in Headers */ = {isa = PBXBuildFile; fileRef = FC222A40FA084F2A88CD8B92 /* transclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAC81F0E7989003A66F5 /* uthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9253E64A804DAA869E74A6 /* uthash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAC91F0E7989003A66F5 /* uuid.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2F16DC2C0E4BCAA208BBCE /* uuid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BACA1F0E7989003A66F5 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B529C61C562489CB471CEE5 /* writer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BACB1F0E7989003A66F5 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FBBC5C22EBB4BAFBDAB942E /* zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BACC1F0E7989003A66F5 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = AB64A8EE5EA04AE58B918E8E /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3706BAE81F0E7B07003A66F5 /* libMultiMarkdown_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 3706BAAD1F0E7920003A66F5 /* libMultiMarkdown_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C43B692097519600445696 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B682097519600445696 /* file.h */; };
+		37C43B6A2097519600445696 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B682097519600445696 /* file.h */; };
+		37C43B71209751F800445696 /* textbundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6B209751F800445696 /* textbundle.h */; };
+		37C43B72209751F800445696 /* textbundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6B209751F800445696 /* textbundle.h */; };
+		37C43B73209751F800445696 /* i18n.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6C209751F800445696 /* i18n.h */; };
+		37C43B74209751F800445696 /* i18n.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6C209751F800445696 /* i18n.h */; };
+		37C43B75209751F800445696 /* opendocument-content.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6D209751F800445696 /* opendocument-content.h */; };
+		37C43B76209751F800445696 /* opendocument-content.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6D209751F800445696 /* opendocument-content.h */; };
+		37C43B77209751F800445696 /* opendocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6E209751F800445696 /* opendocument.h */; };
+		37C43B78209751F800445696 /* opendocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6E209751F800445696 /* opendocument.h */; };
+		37C43B79209751F800445696 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6F209751F800445696 /* token.h */; };
+		37C43B7A209751F800445696 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6F209751F800445696 /* token.h */; };
+		37C43B7B209751F800445696 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B70209751F800445696 /* parser.h */; };
+		37C43B7C209751F800445696 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B70209751F800445696 /* parser.h */; };
+		37C43B992097521300445696 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B7D2097521000445696 /* zip.c */; };
+		37C43B9A2097521300445696 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B7D2097521000445696 /* zip.c */; };
+		37C43B9B2097521300445696 /* object_pool.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B7E2097521000445696 /* object_pool.c */; };
+		37C43B9C2097521300445696 /* object_pool.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B7E2097521000445696 /* object_pool.c */; };
+		37C43B9D2097521300445696 /* lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B7F2097521000445696 /* lexer.c */; };
+		37C43B9E2097521300445696 /* lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B7F2097521000445696 /* lexer.c */; };
+		37C43B9F2097521300445696 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B802097521100445696 /* html.c */; };
+		37C43BA02097521300445696 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B802097521100445696 /* html.c */; };
+		37C43BA12097521300445696 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B812097521100445696 /* parser.c */; };
+		37C43BA22097521300445696 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B812097521100445696 /* parser.c */; };
+		37C43BA32097521300445696 /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B822097521100445696 /* latex.c */; };
+		37C43BA42097521300445696 /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B822097521100445696 /* latex.c */; };
+		37C43BA52097521300445696 /* critic_markup.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B832097521100445696 /* critic_markup.c */; };
+		37C43BA62097521300445696 /* critic_markup.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B832097521100445696 /* critic_markup.c */; };
+		37C43BA72097521300445696 /* textbundle.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B842097521100445696 /* textbundle.c */; };
+		37C43BA82097521300445696 /* textbundle.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B842097521100445696 /* textbundle.c */; };
+		37C43BA92097521300445696 /* char.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B852097521100445696 /* char.c */; };
+		37C43BAA2097521300445696 /* char.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B852097521100445696 /* char.c */; };
+		37C43BAB2097521300445696 /* d_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B862097521100445696 /* d_string.c */; };
+		37C43BAC2097521300445696 /* d_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B862097521100445696 /* d_string.c */; };
+		37C43BAD2097521300445696 /* mmd.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B872097521100445696 /* mmd.c */; };
+		37C43BAE2097521300445696 /* mmd.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B872097521100445696 /* mmd.c */; };
+		37C43BAF2097521300445696 /* char_lookup.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B882097521100445696 /* char_lookup.c */; };
+		37C43BB02097521300445696 /* char_lookup.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B882097521100445696 /* char_lookup.c */; };
+		37C43BB12097521300445696 /* aho-corasick.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B892097521100445696 /* aho-corasick.c */; };
+		37C43BB22097521300445696 /* aho-corasick.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B892097521100445696 /* aho-corasick.c */; };
+		37C43BB32097521300445696 /* token.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8A2097521200445696 /* token.c */; };
+		37C43BB42097521300445696 /* token.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8A2097521200445696 /* token.c */; };
+		37C43BB52097521300445696 /* uuid.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8B2097521200445696 /* uuid.c */; };
+		37C43BB62097521300445696 /* uuid.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8B2097521200445696 /* uuid.c */; };
+		37C43BB72097521300445696 /* file.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8C2097521200445696 /* file.c */; };
+		37C43BB82097521300445696 /* file.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8C2097521200445696 /* file.c */; };
+		37C43BB92097521300445696 /* epub.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8D2097521200445696 /* epub.c */; };
+		37C43BBA2097521300445696 /* epub.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8D2097521200445696 /* epub.c */; };
+		37C43BBB2097521300445696 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8E2097521200445696 /* writer.c */; };
+		37C43BBC2097521300445696 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8E2097521200445696 /* writer.c */; };
+		37C43BBD2097521300445696 /* opendocument-content.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8F2097521200445696 /* opendocument-content.c */; };
+		37C43BBE2097521300445696 /* opendocument-content.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B8F2097521200445696 /* opendocument-content.c */; };
+		37C43BBF2097521300445696 /* rng.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B902097521200445696 /* rng.c */; };
+		37C43BC02097521300445696 /* rng.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B902097521200445696 /* rng.c */; };
+		37C43BC12097521300445696 /* transclude.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B912097521200445696 /* transclude.c */; };
+		37C43BC22097521300445696 /* transclude.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B912097521200445696 /* transclude.c */; };
+		37C43BC32097521300445696 /* token_pairs.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B922097521200445696 /* token_pairs.c */; };
+		37C43BC42097521300445696 /* token_pairs.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B922097521200445696 /* token_pairs.c */; };
+		37C43BC52097521300445696 /* beamer.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B932097521300445696 /* beamer.c */; };
+		37C43BC62097521300445696 /* beamer.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B932097521300445696 /* beamer.c */; };
+		37C43BC72097521300445696 /* miniz.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B942097521300445696 /* miniz.c */; };
+		37C43BC82097521300445696 /* miniz.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B942097521300445696 /* miniz.c */; };
+		37C43BC92097521300445696 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B952097521300445696 /* scanners.c */; };
+		37C43BCA2097521300445696 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B952097521300445696 /* scanners.c */; };
+		37C43BCB2097521300445696 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B962097521300445696 /* stack.c */; };
+		37C43BCC2097521300445696 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B962097521300445696 /* stack.c */; };
+		37C43BCD2097521300445696 /* memoir.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B972097521300445696 /* memoir.c */; };
+		37C43BCE2097521300445696 /* memoir.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B972097521300445696 /* memoir.c */; };
+		37C43BCF2097521300445696 /* opendocument.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B982097521300445696 /* opendocument.c */; };
+		37C43BD02097521300445696 /* opendocument.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B982097521300445696 /* opendocument.c */; };
+		3E7ABE1308BB4BFB8F7B6C1E /* lexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1280E141CC66480D97CF445F /* lexer.h */; };
+		4D242C38F9614B4087A21E39 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B529C61C562489CB471CEE5 /* writer.h */; };
+		4D9E4D4954E3462AB2DA6279 /* uuid.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2F16DC2C0E4BCAA208BBCE /* uuid.h */; };
+		72D0B8C3E21C43E78C8F4709 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D1438E97BB4DD19B7B6437 /* stack.h */; };
+		A13038FE21D54FCD9C4D9E21 /* beamer.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A35C499A97409587493022 /* beamer.h */; };
+		A3B0FBB3B3194CE4B57BC3EB /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 1936C520832B42C29219C90D /* scanners.h */; };
+		B446DC1D802B47C4B01B5EC3 /* mmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 09BD1E9F2CE84ABCB28A2CC5 /* mmd.h */; };
+		B7B1687ECFBF446EB2383AFD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E531D6377274A1AA8D3D3AB /* main.c */; };
+		BB0B7AAF17914C71AEAB8025 /* object_pool.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C8142A36BA4B1A8FFDB326 /* object_pool.h */; };
+		BC0B1C1E3A7E4E038B858F1E /* aho-corasick.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F080CC5E54A4990BE4E7FB8 /* aho-corasick.h */; };
+		BCFA4855BC4E445C846DAE2C /* d_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 58DBE4ECC1054019B56E2E46 /* d_string.c */; };
+		CB9CBDDC993E481E81B53EA3 /* libMultiMarkdown.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B47EF14D325F4ACF956BE4F7 /* libMultiMarkdown.h */; };
+		CCCA586121324D49956F8948 /* token.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4B8F63B4FBC4FEEBD2FB771 /* token.h */; };
+		CE0123D8604A48D79D83A8B8 /* token_pairs.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C58ECEE0CF74322AC8F2D21 /* token_pairs.h */; };
+		DA6F353F274B4BDB8060FB71 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = A4B8F63B4FBC4FEEBD2FB771 /* token.h */; };
+		E0EBF193EDED4ACDB52ECD41 /* transclude.h in Headers */ = {isa = PBXBuildFile; fileRef = FC222A40FA084F2A88CD8B92 /* transclude.h */; };
+		E63AE73D31D94732BB8A4401 /* uthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9253E64A804DAA869E74A6 /* uthash.h */; };
+		E755A5D0096340F0815464A6 /* critic_markup.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0C7A08AEC84FC0B4BE3961 /* critic_markup.h */; };
+		F258C824FACA4FA1861A9242 /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = B47EF14D325F4ACF956BE4F7 /* libMultiMarkdown.h */; };
+		FB087327FF95480590D61895 /* d_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DCA9173F0B4D419D332689 /* d_string.h */; };
+		FD3F236F7F464BE1896AD138 /* d_string.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65DCA9173F0B4D419D332689 /* d_string.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AB4A20A1153444094A86981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B75A357246134F3DA4374F47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66EDEA69CD524311A22D3555;
+			remoteInfo = ALL_BUILD;
+		};
+		607FE2DE3DF442DA8A4C7A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B75A357246134F3DA4374F47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66EDEA69CD524311A22D3555;
+			remoteInfo = ALL_BUILD;
+		};
+		80C9510CBFFF4E87BB9AE0D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B75A357246134F3DA4374F47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CABAE70A719140488A068647;
+			remoteInfo = libMultiMarkdown;
+		};
+		8348A6CA1721468CAF607A99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B75A357246134F3DA4374F47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDD919E7C1AE418CA50BF1C2;
+			remoteInfo = multimarkdown;
+		};
+		D0A0DF63453841CEAC422E25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B75A357246134F3DA4374F47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CABAE70A719140488A068647;
+			remoteInfo = libMultiMarkdown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B77E833755A4240BEA86FED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 6;
+			files = (
+				FD3F236F7F464BE1896AD138 /* d_string.h in CopyFiles */,
+				CB9CBDDC993E481E81B53EA3 /* libMultiMarkdown.h in CopyFiles */,
+				CCCA586121324D49956F8948 /* token.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09BD1E9F2CE84ABCB28A2CC5 /* mmd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mmd.h; path = Sources/libMultiMarkdown/mmd.h; sourceTree = SOURCE_ROOT; };
+		0F080CC5E54A4990BE4E7FB8 /* aho-corasick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "aho-corasick.h"; path = "Sources/libMultiMarkdown/aho-corasick.h"; sourceTree = SOURCE_ROOT; };
+		1280E141CC66480D97CF445F /* lexer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lexer.h; path = Sources/libMultiMarkdown/lexer.h; sourceTree = SOURCE_ROOT; };
+		175DE466842942169BD40631 /* char.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = char.h; path = Sources/libMultiMarkdown/char.h; sourceTree = SOURCE_ROOT; };
+		1936C520832B42C29219C90D /* scanners.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scanners.h; path = Sources/libMultiMarkdown/scanners.h; sourceTree = SOURCE_ROOT; };
+		2C9253E64A804DAA869E74A6 /* uthash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = uthash.h; path = Sources/libMultiMarkdown/uthash.h; sourceTree = SOURCE_ROOT; };
+		3706BAAB1F0E7920003A66F5 /* libMultiMarkdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libMultiMarkdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3706BAAD1F0E7920003A66F5 /* libMultiMarkdown_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libMultiMarkdown_iOS.h; sourceTree = "<group>"; };
+		3706BAAE1F0E7920003A66F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37C43B682097519600445696 /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = file.h; path = Sources/libMultiMarkdown/file.h; sourceTree = "<group>"; };
+		37C43B6B209751F800445696 /* textbundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = textbundle.h; path = Sources/libMultiMarkdown/textbundle.h; sourceTree = "<group>"; };
+		37C43B6C209751F800445696 /* i18n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = i18n.h; path = Sources/libMultiMarkdown/i18n.h; sourceTree = "<group>"; };
+		37C43B6D209751F800445696 /* opendocument-content.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "opendocument-content.h"; path = "Sources/libMultiMarkdown/opendocument-content.h"; sourceTree = "<group>"; };
+		37C43B6E209751F800445696 /* opendocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opendocument.h; path = Sources/libMultiMarkdown/opendocument.h; sourceTree = "<group>"; };
+		37C43B6F209751F800445696 /* token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = token.h; path = Sources/libMultiMarkdown/include/token.h; sourceTree = "<group>"; };
+		37C43B70209751F800445696 /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parser.h; path = Sources/libMultiMarkdown/parser.h; sourceTree = "<group>"; };
+		37C43B7D2097521000445696 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zip.c; path = Sources/libMultiMarkdown/zip.c; sourceTree = "<group>"; };
+		37C43B7E2097521000445696 /* object_pool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = object_pool.c; path = Sources/libMultiMarkdown/object_pool.c; sourceTree = "<group>"; };
+		37C43B7F2097521000445696 /* lexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lexer.c; path = Sources/libMultiMarkdown/lexer.c; sourceTree = "<group>"; };
+		37C43B802097521100445696 /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html.c; path = Sources/libMultiMarkdown/html.c; sourceTree = "<group>"; };
+		37C43B812097521100445696 /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parser.c; path = Sources/libMultiMarkdown/parser.c; sourceTree = "<group>"; };
+		37C43B822097521100445696 /* latex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = latex.c; path = Sources/libMultiMarkdown/latex.c; sourceTree = "<group>"; };
+		37C43B832097521100445696 /* critic_markup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = critic_markup.c; path = Sources/libMultiMarkdown/critic_markup.c; sourceTree = "<group>"; };
+		37C43B842097521100445696 /* textbundle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = textbundle.c; path = Sources/libMultiMarkdown/textbundle.c; sourceTree = "<group>"; };
+		37C43B852097521100445696 /* char.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = char.c; path = Sources/libMultiMarkdown/char.c; sourceTree = "<group>"; };
+		37C43B862097521100445696 /* d_string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = d_string.c; path = Sources/libMultiMarkdown/d_string.c; sourceTree = "<group>"; };
+		37C43B872097521100445696 /* mmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mmd.c; path = Sources/libMultiMarkdown/mmd.c; sourceTree = "<group>"; };
+		37C43B882097521100445696 /* char_lookup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = char_lookup.c; path = Sources/libMultiMarkdown/char_lookup.c; sourceTree = "<group>"; };
+		37C43B892097521100445696 /* aho-corasick.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "aho-corasick.c"; path = "Sources/libMultiMarkdown/aho-corasick.c"; sourceTree = "<group>"; };
+		37C43B8A2097521200445696 /* token.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = token.c; path = Sources/libMultiMarkdown/token.c; sourceTree = "<group>"; };
+		37C43B8B2097521200445696 /* uuid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = uuid.c; path = Sources/libMultiMarkdown/uuid.c; sourceTree = "<group>"; };
+		37C43B8C2097521200445696 /* file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = file.c; path = Sources/libMultiMarkdown/file.c; sourceTree = "<group>"; };
+		37C43B8D2097521200445696 /* epub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = epub.c; path = Sources/libMultiMarkdown/epub.c; sourceTree = "<group>"; };
+		37C43B8E2097521200445696 /* writer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = writer.c; path = Sources/libMultiMarkdown/writer.c; sourceTree = "<group>"; };
+		37C43B8F2097521200445696 /* opendocument-content.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "opendocument-content.c"; path = "Sources/libMultiMarkdown/opendocument-content.c"; sourceTree = "<group>"; };
+		37C43B902097521200445696 /* rng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rng.c; path = Sources/libMultiMarkdown/rng.c; sourceTree = "<group>"; };
+		37C43B912097521200445696 /* transclude.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = transclude.c; path = Sources/libMultiMarkdown/transclude.c; sourceTree = "<group>"; };
+		37C43B922097521200445696 /* token_pairs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = token_pairs.c; path = Sources/libMultiMarkdown/token_pairs.c; sourceTree = "<group>"; };
+		37C43B932097521300445696 /* beamer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = beamer.c; path = Sources/libMultiMarkdown/beamer.c; sourceTree = "<group>"; };
+		37C43B942097521300445696 /* miniz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = miniz.c; path = Sources/libMultiMarkdown/miniz.c; sourceTree = "<group>"; };
+		37C43B952097521300445696 /* scanners.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = scanners.c; path = Sources/libMultiMarkdown/scanners.c; sourceTree = "<group>"; };
+		37C43B962097521300445696 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stack.c; path = Sources/libMultiMarkdown/stack.c; sourceTree = "<group>"; };
+		37C43B972097521300445696 /* memoir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = memoir.c; path = Sources/libMultiMarkdown/memoir.c; sourceTree = "<group>"; };
+		37C43B982097521300445696 /* opendocument.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = opendocument.c; path = Sources/libMultiMarkdown/opendocument.c; sourceTree = "<group>"; };
+		392B1776D430477F9D55C46F /* miniz.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = miniz.h; path = Sources/libMultiMarkdown/miniz.h; sourceTree = SOURCE_ROOT; };
+		39972AA4626740D491DE39FC /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4FBBC5C22EBB4BAFBDAB942E /* zip.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = zip.h; path = Sources/libMultiMarkdown/zip.h; sourceTree = SOURCE_ROOT; };
+		58DBE4ECC1054019B56E2E46 /* d_string.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = d_string.c; path = Sources/libMultiMarkdown/d_string.c; sourceTree = SOURCE_ROOT; };
+		5A2F16DC2C0E4BCAA208BBCE /* uuid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = uuid.h; path = Sources/libMultiMarkdown/uuid.h; sourceTree = SOURCE_ROOT; };
+		5EA56AD7426A408FAEBD25A3 /* libMultiMarkdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = libMultiMarkdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DCA9173F0B4D419D332689 /* d_string.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = d_string.h; path = Sources/libMultiMarkdown/include/d_string.h; sourceTree = SOURCE_ROOT; };
+		6ABB937BA44F46758BB3B372 /* argtable3.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = argtable3.c; path = Sources/multimarkdown/argtable3.c; sourceTree = SOURCE_ROOT; };
+		6C58ECEE0CF74322AC8F2D21 /* token_pairs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = token_pairs.h; path = Sources/libMultiMarkdown/token_pairs.h; sourceTree = SOURCE_ROOT; };
+		70F3F59382124FA997890864 /* html.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = html.h; path = Sources/libMultiMarkdown/html.h; sourceTree = SOURCE_ROOT; };
+		79D1438E97BB4DD19B7B6437 /* stack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stack.h; path = Sources/libMultiMarkdown/stack.h; sourceTree = SOURCE_ROOT; };
+		7E531D6377274A1AA8D3D3AB /* main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = main.c; path = Sources/multimarkdown/main.c; sourceTree = SOURCE_ROOT; };
+		92C7DE9AB35547E59B48E2D1 /* latex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = latex.h; path = Sources/libMultiMarkdown/latex.h; sourceTree = SOURCE_ROOT; };
+		9B529C61C562489CB471CEE5 /* writer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = writer.h; path = Sources/libMultiMarkdown/writer.h; sourceTree = SOURCE_ROOT; };
+		A4B8F63B4FBC4FEEBD2FB771 /* token.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = token.h; path = Sources/libMultiMarkdown/include/token.h; sourceTree = SOURCE_ROOT; };
+		A5A35C499A97409587493022 /* beamer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = beamer.h; path = Sources/libMultiMarkdown/beamer.h; sourceTree = SOURCE_ROOT; };
+		AB64A8EE5EA04AE58B918E8E /* version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = version.h; path = "build-xcode/version.h"; sourceTree = SOURCE_ROOT; };
+		B47EF14D325F4ACF956BE4F7 /* libMultiMarkdown.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = libMultiMarkdown.h; path = Sources/libMultiMarkdown/include/libMultiMarkdown.h; sourceTree = SOURCE_ROOT; };
+		B4C8142A36BA4B1A8FFDB326 /* object_pool.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = object_pool.h; path = Sources/libMultiMarkdown/object_pool.h; sourceTree = SOURCE_ROOT; };
+		BCD2542338C24E33AD8C68CF /* epub.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = epub.h; path = Sources/libMultiMarkdown/epub.h; sourceTree = SOURCE_ROOT; };
+		BFB5D849ABD141838AEA51DA /* multimarkdown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = multimarkdown; sourceTree = BUILT_PRODUCTS_DIR; };
+		E646A6F8D72147D6B230F4FD /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		EB0C7A08AEC84FC0B4BE3961 /* critic_markup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = critic_markup.h; path = Sources/libMultiMarkdown/critic_markup.h; sourceTree = SOURCE_ROOT; };
+		EE86CAF7B45D416DAE47DD25 /* memoir.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = memoir.h; path = Sources/libMultiMarkdown/memoir.h; sourceTree = SOURCE_ROOT; };
+		FC222A40FA084F2A88CD8B92 /* transclude.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = transclude.h; path = Sources/libMultiMarkdown/transclude.h; sourceTree = SOURCE_ROOT; };
+		FEFD7D76C8AD44BB83929B77 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3706BAA71F0E7920003A66F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0958EF34EE30484B9F3F8A4E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3706BAAC1F0E7920003A66F5 /* libMultiMarkdown-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3706BAAD1F0E7920003A66F5 /* libMultiMarkdown_iOS.h */,
+				3706BAAE1F0E7920003A66F5 /* Info.plist */,
+			);
+			name = "libMultiMarkdown-iOS";
+			path = "build-xcode/libMultiMarkdown-iOS";
+			sourceTree = "<group>";
+		};
+		37EC070C24BC4FE4B36C57B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EA56AD7426A408FAEBD25A3 /* libMultiMarkdown.framework */,
+				BFB5D849ABD141838AEA51DA /* multimarkdown */,
+				3706BAAB1F0E7920003A66F5 /* libMultiMarkdown.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E5AAF9B5AB64220A873BD2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4D88BD55FBAC4009AFAC778D /* libMultiMarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				DB480B22BF5145209EA7FFFC /* Source Files */,
+				5C898A3FA4C149598A8328E0 /* Header Files */,
+				E646A6F8D72147D6B230F4FD /* CMakeLists.txt */,
+			);
+			name = libMultiMarkdown;
+			sourceTree = "<group>";
+		};
+		5C898A3FA4C149598A8328E0 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				37C43B6C209751F800445696 /* i18n.h */,
+				37C43B6D209751F800445696 /* opendocument-content.h */,
+				37C43B6E209751F800445696 /* opendocument.h */,
+				37C43B70209751F800445696 /* parser.h */,
+				37C43B6B209751F800445696 /* textbundle.h */,
+				37C43B6F209751F800445696 /* token.h */,
+				37C43B682097519600445696 /* file.h */,
+				0F080CC5E54A4990BE4E7FB8 /* aho-corasick.h */,
+				A5A35C499A97409587493022 /* beamer.h */,
+				175DE466842942169BD40631 /* char.h */,
+				EB0C7A08AEC84FC0B4BE3961 /* critic_markup.h */,
+				BCD2542338C24E33AD8C68CF /* epub.h */,
+				70F3F59382124FA997890864 /* html.h */,
+				65DCA9173F0B4D419D332689 /* d_string.h */,
+				B47EF14D325F4ACF956BE4F7 /* libMultiMarkdown.h */,
+				A4B8F63B4FBC4FEEBD2FB771 /* token.h */,
+				92C7DE9AB35547E59B48E2D1 /* latex.h */,
+				1280E141CC66480D97CF445F /* lexer.h */,
+				EE86CAF7B45D416DAE47DD25 /* memoir.h */,
+				392B1776D430477F9D55C46F /* miniz.h */,
+				09BD1E9F2CE84ABCB28A2CC5 /* mmd.h */,
+				B4C8142A36BA4B1A8FFDB326 /* object_pool.h */,
+				1936C520832B42C29219C90D /* scanners.h */,
+				79D1438E97BB4DD19B7B6437 /* stack.h */,
+				6C58ECEE0CF74322AC8F2D21 /* token_pairs.h */,
+				FC222A40FA084F2A88CD8B92 /* transclude.h */,
+				2C9253E64A804DAA869E74A6 /* uthash.h */,
+				5A2F16DC2C0E4BCAA208BBCE /* uuid.h */,
+				9B529C61C562489CB471CEE5 /* writer.h */,
+				4FBBC5C22EBB4BAFBDAB942E /* zip.h */,
+				AB64A8EE5EA04AE58B918E8E /* version.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		ACCB129292B24C03B7B6B4C6 = {
+			isa = PBXGroup;
+			children = (
+				F58AFE27EE86491B84BE08CB /* Sources */,
+				3E5AAF9B5AB64220A873BD2A /* Resources */,
+				3706BAAC1F0E7920003A66F5 /* libMultiMarkdown-iOS */,
+				37EC070C24BC4FE4B36C57B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE3121A29D4649ABABD86E49 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				58DBE4ECC1054019B56E2E46 /* d_string.c */,
+				6ABB937BA44F46758BB3B372 /* argtable3.c */,
+				7E531D6377274A1AA8D3D3AB /* main.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C1ADABE2C25746AABE9B4DC2 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				0958EF34EE30484B9F3F8A4E /* CMake Rules */,
+				39972AA4626740D491DE39FC /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		C63F48A28DF24B428ABC87B5 /* multimarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				AE3121A29D4649ABABD86E49 /* Source Files */,
+				FEFD7D76C8AD44BB83929B77 /* CMakeLists.txt */,
+			);
+			name = multimarkdown;
+			sourceTree = "<group>";
+		};
+		DB480B22BF5145209EA7FFFC /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				37C43B892097521100445696 /* aho-corasick.c */,
+				37C43B932097521300445696 /* beamer.c */,
+				37C43B882097521100445696 /* char_lookup.c */,
+				37C43B852097521100445696 /* char.c */,
+				37C43B832097521100445696 /* critic_markup.c */,
+				37C43B862097521100445696 /* d_string.c */,
+				37C43B8D2097521200445696 /* epub.c */,
+				37C43B8C2097521200445696 /* file.c */,
+				37C43B802097521100445696 /* html.c */,
+				37C43B822097521100445696 /* latex.c */,
+				37C43B7F2097521000445696 /* lexer.c */,
+				37C43B972097521300445696 /* memoir.c */,
+				37C43B942097521300445696 /* miniz.c */,
+				37C43B872097521100445696 /* mmd.c */,
+				37C43B7E2097521000445696 /* object_pool.c */,
+				37C43B8F2097521200445696 /* opendocument-content.c */,
+				37C43B982097521300445696 /* opendocument.c */,
+				37C43B812097521100445696 /* parser.c */,
+				37C43B902097521200445696 /* rng.c */,
+				37C43B952097521300445696 /* scanners.c */,
+				37C43B962097521300445696 /* stack.c */,
+				37C43B842097521100445696 /* textbundle.c */,
+				37C43B922097521200445696 /* token_pairs.c */,
+				37C43B8A2097521200445696 /* token.c */,
+				37C43B912097521200445696 /* transclude.c */,
+				37C43B8B2097521200445696 /* uuid.c */,
+				37C43B8E2097521200445696 /* writer.c */,
+				37C43B7D2097521000445696 /* zip.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F58AFE27EE86491B84BE08CB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C63F48A28DF24B428ABC87B5 /* multimarkdown */,
+				4D88BD55FBAC4009AFAC778D /* libMultiMarkdown */,
+				C1ADABE2C25746AABE9B4DC2 /* ALL_BUILD */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3706BAA81F0E7920003A66F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37C43B6A2097519600445696 /* file.h in Headers */,
+				3706BAC01F0E7989003A66F5 /* memoir.h in Headers */,
+				3706BACA1F0E7989003A66F5 /* writer.h in Headers */,
+				3706BABC1F0E7989003A66F5 /* libMultiMarkdown.h in Headers */,
+				3706BAC11F0E7989003A66F5 /* miniz.h in Headers */,
+				3706BAC31F0E7989003A66F5 /* object_pool.h in Headers */,
+				3706BAE81F0E7B07003A66F5 /* libMultiMarkdown_iOS.h in Headers */,
+				3706BAB51F0E7989003A66F5 /* aho-corasick.h in Headers */,
+				3706BACB1F0E7989003A66F5 /* zip.h in Headers */,
+				3706BAC81F0E7989003A66F5 /* uthash.h in Headers */,
+				3706BAB81F0E7989003A66F5 /* critic_markup.h in Headers */,
+				37C43B7C209751F800445696 /* parser.h in Headers */,
+				37C43B78209751F800445696 /* opendocument.h in Headers */,
+				3706BAC91F0E7989003A66F5 /* uuid.h in Headers */,
+				3706BACC1F0E7989003A66F5 /* version.h in Headers */,
+				3706BABB1F0E7989003A66F5 /* d_string.h in Headers */,
+				3706BAC21F0E7989003A66F5 /* mmd.h in Headers */,
+				3706BAC51F0E7989003A66F5 /* stack.h in Headers */,
+				3706BABA1F0E7989003A66F5 /* html.h in Headers */,
+				3706BAB71F0E7989003A66F5 /* char.h in Headers */,
+				3706BAB91F0E7989003A66F5 /* epub.h in Headers */,
+				37C43B76209751F800445696 /* opendocument-content.h in Headers */,
+				3706BABD1F0E7989003A66F5 /* token.h in Headers */,
+				3706BAC61F0E7989003A66F5 /* token_pairs.h in Headers */,
+				37C43B7A209751F800445696 /* token.h in Headers */,
+				37C43B72209751F800445696 /* textbundle.h in Headers */,
+				3706BAC71F0E7989003A66F5 /* transclude.h in Headers */,
+				3706BABF1F0E7989003A66F5 /* lexer.h in Headers */,
+				37C43B74209751F800445696 /* i18n.h in Headers */,
+				3706BAB61F0E7989003A66F5 /* beamer.h in Headers */,
+				3706BAC41F0E7989003A66F5 /* scanners.h in Headers */,
+				3706BABE1F0E7989003A66F5 /* latex.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6943D8922A14E0CA0A467F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0B1C1E3A7E4E038B858F1E /* aho-corasick.h in Headers */,
+				37C43B73209751F800445696 /* i18n.h in Headers */,
+				A13038FE21D54FCD9C4D9E21 /* beamer.h in Headers */,
+				068B3C81B0844E55BD8872FF /* char.h in Headers */,
+				E755A5D0096340F0815464A6 /* critic_markup.h in Headers */,
+				31E76AE39E2B4D6A89BDA878 /* epub.h in Headers */,
+				0F8EB24527E343B5A6135DB6 /* html.h in Headers */,
+				37C43B7B209751F800445696 /* parser.h in Headers */,
+				FB087327FF95480590D61895 /* d_string.h in Headers */,
+				37C43B71209751F800445696 /* textbundle.h in Headers */,
+				F258C824FACA4FA1861A9242 /* libMultiMarkdown.h in Headers */,
+				DA6F353F274B4BDB8060FB71 /* token.h in Headers */,
+				088BAA10DBEE47BCB18925BB /* latex.h in Headers */,
+				3E7ABE1308BB4BFB8F7B6C1E /* lexer.h in Headers */,
+				37C43B75209751F800445696 /* opendocument-content.h in Headers */,
+				37C43B77209751F800445696 /* opendocument.h in Headers */,
+				186F64EC747D4FE3838DA359 /* memoir.h in Headers */,
+				07463900DF4C42C8A8558BEB /* miniz.h in Headers */,
+				B446DC1D802B47C4B01B5EC3 /* mmd.h in Headers */,
+				37C43B79209751F800445696 /* token.h in Headers */,
+				BB0B7AAF17914C71AEAB8025 /* object_pool.h in Headers */,
+				A3B0FBB3B3194CE4B57BC3EB /* scanners.h in Headers */,
+				72D0B8C3E21C43E78C8F4709 /* stack.h in Headers */,
+				CE0123D8604A48D79D83A8B8 /* token_pairs.h in Headers */,
+				E0EBF193EDED4ACDB52ECD41 /* transclude.h in Headers */,
+				E63AE73D31D94732BB8A4401 /* uthash.h in Headers */,
+				37C43B692097519600445696 /* file.h in Headers */,
+				4D9E4D4954E3462AB2DA6279 /* uuid.h in Headers */,
+				4D242C38F9614B4087A21E39 /* writer.h in Headers */,
+				041D8A582C2946689C82F734 /* zip.h in Headers */,
+				2B35646E14744625A4009EDF /* version.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3706BAAA1F0E7920003A66F5 /* libMultiMarkdown-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3706BAB01F0E7920003A66F5 /* Build configuration list for PBXNativeTarget "libMultiMarkdown-iOS" */;
+			buildPhases = (
+				3706BAA61F0E7920003A66F5 /* Sources */,
+				3706BAA71F0E7920003A66F5 /* Frameworks */,
+				3706BAA81F0E7920003A66F5 /* Headers */,
+				3706BAA91F0E7920003A66F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libMultiMarkdown-iOS";
+			productName = "libMultiMarkdown-iOS";
+			productReference = 3706BAAB1F0E7920003A66F5 /* libMultiMarkdown.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CABAE70A719140488A068647 /* libMultiMarkdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 826C437E1FDC4C72996B622A /* Build configuration list for PBXNativeTarget "libMultiMarkdown" */;
+			buildPhases = (
+				B6943D8922A14E0CA0A467F1 /* Headers */,
+				1B77E833755A4240BEA86FED /* CopyFiles */,
+				94B34D28B49F47F99A870B84 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libMultiMarkdown;
+			productName = libMultiMarkdown;
+			productReference = 5EA56AD7426A408FAEBD25A3 /* libMultiMarkdown.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDD919E7C1AE418CA50BF1C2 /* multimarkdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBD114686004AAEBAB4D1B8 /* Build configuration list for PBXNativeTarget "multimarkdown" */;
+			buildPhases = (
+				6AEFFA75A3F14D8380B32668 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F970DBB4A5B64B199036EE7E /* PBXTargetDependency */,
+			);
+			name = multimarkdown;
+			productName = multimarkdown;
+			productReference = BFB5D849ABD141838AEA51DA /* multimarkdown */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B75A357246134F3DA4374F47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					3706BAAA1F0E7920003A66F5 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 727DB04BECF94665B3DF71F0 /* Build configuration list for PBXProject "MultiMarkdown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ACCB129292B24C03B7B6B4C6;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				66EDEA69CD524311A22D3555 /* ALL_BUILD */,
+				1A24C7C1F5B6431C9F0578DF /* RUN_TESTS */,
+				FDE755CD78024D8A834D9B1C /* install */,
+				CABAE70A719140488A068647 /* libMultiMarkdown */,
+				3706BAAA1F0E7920003A66F5 /* libMultiMarkdown-iOS */,
+				EDD919E7C1AE418CA50BF1C2 /* multimarkdown */,
+				6ACA654131264BFF9E9E7022 /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3706BAA91F0E7920003A66F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36658AFE7531407EBC7C3CD1 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/greg/sources-shared/MultiMarkdown-6/build-xcode -f /Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		4468F6A59B164B0484A9DAD4 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/greg/sources-shared/MultiMarkdown-6/build-xcode -f /Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		673D0A20254A4F9D9099E267 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/greg/sources-shared/MultiMarkdown-6/build-xcode -f /Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		BDA3A3486DEA49CE81203118 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/greg/sources-shared/MultiMarkdown-6/build-xcode -f /Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3706BAA61F0E7920003A66F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37C43BB62097521300445696 /* uuid.c in Sources */,
+				37C43BC02097521300445696 /* rng.c in Sources */,
+				37C43BAE2097521300445696 /* mmd.c in Sources */,
+				37C43BB02097521300445696 /* char_lookup.c in Sources */,
+				37C43BA42097521300445696 /* latex.c in Sources */,
+				37C43BC42097521300445696 /* token_pairs.c in Sources */,
+				37C43BBC2097521300445696 /* writer.c in Sources */,
+				37C43BB42097521300445696 /* token.c in Sources */,
+				37C43BAC2097521300445696 /* d_string.c in Sources */,
+				37C43BA62097521300445696 /* critic_markup.c in Sources */,
+				37C43BC62097521300445696 /* beamer.c in Sources */,
+				37C43BB82097521300445696 /* file.c in Sources */,
+				37C43BB22097521300445696 /* aho-corasick.c in Sources */,
+				37C43BA02097521300445696 /* html.c in Sources */,
+				37C43BC22097521300445696 /* transclude.c in Sources */,
+				37C43BC82097521300445696 /* miniz.c in Sources */,
+				37C43BBE2097521300445696 /* opendocument-content.c in Sources */,
+				37C43BCA2097521300445696 /* scanners.c in Sources */,
+				37C43BCC2097521300445696 /* stack.c in Sources */,
+				37C43BAA2097521300445696 /* char.c in Sources */,
+				37C43BCE2097521300445696 /* memoir.c in Sources */,
+				37C43B9E2097521300445696 /* lexer.c in Sources */,
+				37C43BA82097521300445696 /* textbundle.c in Sources */,
+				37C43B9C2097521300445696 /* object_pool.c in Sources */,
+				37C43BD02097521300445696 /* opendocument.c in Sources */,
+				37C43BBA2097521300445696 /* epub.c in Sources */,
+				37C43BA22097521300445696 /* parser.c in Sources */,
+				37C43B9A2097521300445696 /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AEFFA75A3F14D8380B32668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFA4855BC4E445C846DAE2C /* d_string.c in Sources */,
+				0628D3F38A6D49C0BCC6F389 /* argtable3.c in Sources */,
+				B7B1687ECFBF446EB2383AFD /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94B34D28B49F47F99A870B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37C43BB52097521300445696 /* uuid.c in Sources */,
+				37C43BBF2097521300445696 /* rng.c in Sources */,
+				37C43BAD2097521300445696 /* mmd.c in Sources */,
+				37C43BAF2097521300445696 /* char_lookup.c in Sources */,
+				37C43BA32097521300445696 /* latex.c in Sources */,
+				37C43BC32097521300445696 /* token_pairs.c in Sources */,
+				37C43BBB2097521300445696 /* writer.c in Sources */,
+				37C43BB32097521300445696 /* token.c in Sources */,
+				37C43BAB2097521300445696 /* d_string.c in Sources */,
+				37C43BA52097521300445696 /* critic_markup.c in Sources */,
+				37C43BC52097521300445696 /* beamer.c in Sources */,
+				37C43BB72097521300445696 /* file.c in Sources */,
+				37C43BB12097521300445696 /* aho-corasick.c in Sources */,
+				37C43B9F2097521300445696 /* html.c in Sources */,
+				37C43BC12097521300445696 /* transclude.c in Sources */,
+				37C43BC72097521300445696 /* miniz.c in Sources */,
+				37C43BBD2097521300445696 /* opendocument-content.c in Sources */,
+				37C43BC92097521300445696 /* scanners.c in Sources */,
+				37C43BCB2097521300445696 /* stack.c in Sources */,
+				37C43BA92097521300445696 /* char.c in Sources */,
+				37C43BCD2097521300445696 /* memoir.c in Sources */,
+				37C43B9D2097521300445696 /* lexer.c in Sources */,
+				37C43BA72097521300445696 /* textbundle.c in Sources */,
+				37C43B9B2097521300445696 /* object_pool.c in Sources */,
+				37C43BCF2097521300445696 /* opendocument.c in Sources */,
+				37C43BB92097521300445696 /* epub.c in Sources */,
+				37C43BA12097521300445696 /* parser.c in Sources */,
+				37C43B992097521300445696 /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		156D606FBA024E049A597A06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CABAE70A719140488A068647 /* libMultiMarkdown */;
+			targetProxy = 80C9510CBFFF4E87BB9AE0D1 /* PBXContainerItemProxy */;
+		};
+		68A82055D0B24DF7B25B1E06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66EDEA69CD524311A22D3555 /* ALL_BUILD */;
+			targetProxy = 1AB4A20A1153444094A86981 /* PBXContainerItemProxy */;
+		};
+		68A8A311BE44408C9E7D15F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66EDEA69CD524311A22D3555 /* ALL_BUILD */;
+			targetProxy = 607FE2DE3DF442DA8A4C7A53 /* PBXContainerItemProxy */;
+		};
+		A56F0A720A26481D8933E811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDD919E7C1AE418CA50BF1C2 /* multimarkdown */;
+			targetProxy = 8348A6CA1721468CAF607A99 /* PBXContainerItemProxy */;
+		};
+		F970DBB4A5B64B199036EE7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CABAE70A719140488A068647 /* libMultiMarkdown */;
+			targetProxy = D0A0DF63453841CEAC422E25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		003EE49034BD4EE692877138 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		1A0F906A53AB45439E1EA20A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CURL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-fbracket-depth=264",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/RelWithDebInfo/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
+					"-lcurl",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = multimarkdown;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		1DF93024CF7E4534A65AA233 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		1E9E48C0FF3144218F425407 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		21C29450FD9947FEADE6390E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
+				INSTALL_PATH = "";
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"'-std=gnu11'",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-fbracket-depth=264",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
+				PRODUCT_BUNDLE_IDENTIFIER = net.multimarkdown.mmd6;
+				PRODUCT_NAME = libMultiMarkdown;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = macosx;
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				VALID_ARCHITECTURES = "x86_64 i386 armv6 armv7 armv7s arm64";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		21F9AEB4FD36455CA764C4AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		2BDE4099401C464184850575 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		34C031124FE9447A94C64D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		3706BAB11F0E7920003A66F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "build-xcode/libMultiMarkdown-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_CFLAGS = "-fbracket-depth=1024";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agiletortoise.libMultiMarkdown;
+				PRODUCT_NAME = libMultiMarkdown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3706BAB21F0E7920003A66F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "build-xcode/libMultiMarkdown-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fbracket-depth=1024";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agiletortoise.libMultiMarkdown;
+				PRODUCT_NAME = libMultiMarkdown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3706BAB31F0E7920003A66F5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "build-xcode/libMultiMarkdown-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fbracket-depth=1024";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agiletortoise.libMultiMarkdown;
+				PRODUCT_NAME = libMultiMarkdown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = MinSizeRel;
+		};
+		3706BAB41F0E7920003A66F5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "build-xcode/libMultiMarkdown-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fbracket-depth=1024";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agiletortoise.libMultiMarkdown;
+				PRODUCT_NAME = libMultiMarkdown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = RelWithDebInfo;
+		};
+		38AB782F3C4747DB9596BFE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		3A3DF8C7A82F4FA8A2A997FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CURL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"'-std=gnu11'",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-fbracket-depth=264",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/Debug/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
+					"-lcurl",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = multimarkdown;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		524925361F894F36BDAC4A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		573B449C87E64D1EA79C08AB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		64665D0BA5EE445582FED480 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		687CC3B1574141DB9AE7251B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		720AE13723D441108DAFD3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		730B5829777D48E292A421BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CURL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-fbracket-depth=264",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/Release/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
+					"-lcurl",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = multimarkdown;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		791A9588BFC84E68BB6936C0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		793B27F88C264BDD95C6F038 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					USE_CURL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-fbracket-depth=264",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/MinSizeRel/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
+					"-lcurl",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = multimarkdown;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		7B9DCC8A06234F34A6C12693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		7BB418A367A447508EE9498B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		87C67FC7DBD7468FA07C8527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build";
+			};
+			name = Debug;
+		};
+		9126C624372D40E3A106B22C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		955CDF0458D2499F81E4DC50 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
+				INSTALL_PATH = "";
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-fbracket-depth=264",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
+				PRODUCT_BUNDLE_IDENTIFIER = net.multimarkdown.mmd6;
+				PRODUCT_NAME = libMultiMarkdown;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = macosx;
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				VALID_ARCHITECTURES = "x86_64 i386 armv6 armv7 armv7s arm64";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		B3B7CE97441747EF99C11AFD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
+				INSTALL_PATH = "";
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-fbracket-depth=264",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
+				PRODUCT_BUNDLE_IDENTIFIER = net.multimarkdown.mmd6;
+				PRODUCT_NAME = libMultiMarkdown;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = macosx;
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				VALID_ARCHITECTURES = "x86_64 i386 armv6 armv7 armv7s arm64";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D2293051E78E44F68B2925B5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D7D94AE83FE6413F83634D22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
+				INSTALL_PATH = "";
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-fbracket-depth=264",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
+				PRODUCT_BUNDLE_IDENTIFIER = net.multimarkdown.mmd6;
+				PRODUCT_NAME = libMultiMarkdown;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = macosx;
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				VALID_ARCHITECTURES = "x86_64 i386 armv6 armv7 armv7s arm64";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		EFC5A1B9687348029DD1400F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build";
+			};
+			name = Release;
+		};
+		F1CCCB9D62A74E5CB1837165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
+					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
+					"/Users/greg/sources-shared/MultiMarkdown-6/test",
+					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3706BAB01F0E7920003A66F5 /* Build configuration list for PBXNativeTarget "libMultiMarkdown-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3706BAB11F0E7920003A66F5 /* Debug */,
+				3706BAB21F0E7920003A66F5 /* Release */,
+				3706BAB31F0E7920003A66F5 /* MinSizeRel */,
+				3706BAB41F0E7920003A66F5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		67332C9540E6462BB1AD16B4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CCCB9D62A74E5CB1837165 /* Debug */,
+				34C031124FE9447A94C64D75 /* Release */,
+				1DF93024CF7E4534A65AA233 /* MinSizeRel */,
+				D2293051E78E44F68B2925B5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		727DB04BECF94665B3DF71F0 /* Build configuration list for PBXProject "MultiMarkdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87C67FC7DBD7468FA07C8527 /* Debug */,
+				EFC5A1B9687348029DD1400F /* Release */,
+				791A9588BFC84E68BB6936C0 /* MinSizeRel */,
+				2BDE4099401C464184850575 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		826C437E1FDC4C72996B622A /* Build configuration list for PBXNativeTarget "libMultiMarkdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C29450FD9947FEADE6390E /* Debug */,
+				D7D94AE83FE6413F83634D22 /* Release */,
+				955CDF0458D2499F81E4DC50 /* MinSizeRel */,
+				B3B7CE97441747EF99C11AFD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		85B6D097DE914F65B665C63D /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524925361F894F36BDAC4A76 /* Debug */,
+				38AB782F3C4747DB9596BFE9 /* Release */,
+				9126C624372D40E3A106B22C /* MinSizeRel */,
+				573B449C87E64D1EA79C08AB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BFBD114686004AAEBAB4D1B8 /* Build configuration list for PBXNativeTarget "multimarkdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3DF8C7A82F4FA8A2A997FB /* Debug */,
+				730B5829777D48E292A421BC /* Release */,
+				793B27F88C264BDD95C6F038 /* MinSizeRel */,
+				1A0F906A53AB45439E1EA20A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E0B02AB64463403BB637DC06 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9DCC8A06234F34A6C12693 /* Debug */,
+				720AE13723D441108DAFD3D6 /* Release */,
+				003EE49034BD4EE692877138 /* MinSizeRel */,
+				1E9E48C0FF3144218F425407 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FF4B94198DC14F4794681800 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687CC3B1574141DB9AE7251B /* Debug */,
+				21F9AEB4FD36455CA764C4AF /* Release */,
+				64665D0BA5EE445582FED480 /* MinSizeRel */,
+				7BB418A367A447508EE9498B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B75A357246134F3DA4374F47 /* Project object */;
+}

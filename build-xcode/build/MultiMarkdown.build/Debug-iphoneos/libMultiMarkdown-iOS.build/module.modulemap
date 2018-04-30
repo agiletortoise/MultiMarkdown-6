@@ -1,0 +1,6 @@
+framework module libMultiMarkdown {
+  umbrella header "libMultiMarkdown.h"
+
+  export *
+  module * { export * }
+}

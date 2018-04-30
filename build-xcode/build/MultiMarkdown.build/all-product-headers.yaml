@@ -1,0 +1,28 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build/Debug-iphoneos/libMultiMarkdown.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "libMultiMarkdown-Swift.h",
+          'external-contents': "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build/Debug-iphoneos/libMultiMarkdown.framework/Headers/libMultiMarkdown-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build/Debug-iphoneos/libMultiMarkdown.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build/MultiMarkdown.build/Debug-iphoneos/libMultiMarkdown-iOS.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
