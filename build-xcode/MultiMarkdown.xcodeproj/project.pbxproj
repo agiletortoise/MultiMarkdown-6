@@ -102,7 +102,6 @@
 		37C43B76209751F800445696 /* opendocument-content.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6D209751F800445696 /* opendocument-content.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37C43B77209751F800445696 /* opendocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6E209751F800445696 /* opendocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37C43B78209751F800445696 /* opendocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6E209751F800445696 /* opendocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37C43B79209751F800445696 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B6F209751F800445696 /* token.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37C43B7B209751F800445696 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B70209751F800445696 /* parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37C43B7C209751F800445696 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43B70209751F800445696 /* parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37C43B992097521300445696 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C43B7D2097521000445696 /* zip.c */; };
@@ -175,7 +174,7 @@
 		CB9CBDDC993E481E81B53EA3 /* libMultiMarkdown.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B47EF14D325F4ACF956BE4F7 /* libMultiMarkdown.h */; };
 		CCCA586121324D49956F8948 /* token.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4B8F63B4FBC4FEEBD2FB771 /* token.h */; };
 		CE0123D8604A48D79D83A8B8 /* token_pairs.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C58ECEE0CF74322AC8F2D21 /* token_pairs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA6F353F274B4BDB8060FB71 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = A4B8F63B4FBC4FEEBD2FB771 /* token.h */; };
+		DA6F353F274B4BDB8060FB71 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = A4B8F63B4FBC4FEEBD2FB771 /* token.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0EBF193EDED4ACDB52ECD41 /* transclude.h in Headers */ = {isa = PBXBuildFile; fileRef = FC222A40FA084F2A88CD8B92 /* transclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E63AE73D31D94732BB8A4401 /* uthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9253E64A804DAA869E74A6 /* uthash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E755A5D0096340F0815464A6 /* critic_markup.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0C7A08AEC84FC0B4BE3961 /* critic_markup.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -542,7 +541,6 @@
 				FB087327FF95480590D61895 /* d_string.h in Headers */,
 				37C43B71209751F800445696 /* textbundle.h in Headers */,
 				F258C824FACA4FA1861A9242 /* libMultiMarkdown.h in Headers */,
-				DA6F353F274B4BDB8060FB71 /* token.h in Headers */,
 				088BAA10DBEE47BCB18925BB /* latex.h in Headers */,
 				3E7ABE1308BB4BFB8F7B6C1E /* lexer.h in Headers */,
 				37C43B75209751F800445696 /* opendocument-content.h in Headers */,
@@ -560,8 +558,8 @@
 				4D9E4D4954E3462AB2DA6279 /* uuid.h in Headers */,
 				4D242C38F9614B4087A21E39 /* writer.h in Headers */,
 				041D8A582C2946689C82F734 /* zip.h in Headers */,
+				DA6F353F274B4BDB8060FB71 /* token.h in Headers */,
 				2B35646E14744625A4009EDF /* version.h in Headers */,
-				37C43B79209751F800445696 /* token.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +624,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 				TargetAttributes = {
 					3706BAAA1F0E7920003A66F5 = {
 						CreatedOnToolsVersion = 9.0;
@@ -981,6 +979,7 @@
 		21C29450FD9947FEADE6390E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = "";
@@ -991,36 +990,22 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
-				);
 				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
-				INSTALL_PATH = "";
-				MACH_O_TYPE = staticlib;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = (
-					"'-std=gnu11'",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
-					"-fbracket-depth=264",
-				);
+				OTHER_CFLAGS = "-fbracket-depth=1024";
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
 				PRODUCT_BUNDLE_IDENTIFIER = net.multimarkdown.mmd6;
 				PRODUCT_NAME = libMultiMarkdown;
-				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				SUPPORTED_PLATFORMS = macosx;
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
-				USE_HEADERMAP = NO;
+				SYMROOT = build;
+				USE_HEADERMAP = YES;
 				VALID_ARCHITECTURES = "x86_64 i386 armv6 armv7 armv7s arm64";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1198,6 +1183,7 @@
 				PRODUCT_NAME = libMultiMarkdown;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SYMROOT = build;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1265,6 +1251,7 @@
 				PRODUCT_NAME = libMultiMarkdown;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SYMROOT = build;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1333,6 +1320,7 @@
 				PRODUCT_NAME = libMultiMarkdown;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SYMROOT = build;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1401,6 +1389,7 @@
 				PRODUCT_NAME = libMultiMarkdown;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SYMROOT = build;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1943,6 +1932,7 @@
 		955CDF0458D2499F81E4DC50 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = "";
@@ -1953,37 +1943,22 @@
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
-				);
 				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
-				INSTALL_PATH = "";
-				MACH_O_TYPE = staticlib;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu11'",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
-					"-fbracket-depth=264",
-				);
+				OTHER_CFLAGS = "-fbracket-depth=1024";
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
 				PRODUCT_BUNDLE_IDENTIFIER = net.multimarkdown.mmd6;
 				PRODUCT_NAME = libMultiMarkdown;
-				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				SUPPORTED_PLATFORMS = macosx;
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
-				USE_HEADERMAP = NO;
+				SYMROOT = build;
+				USE_HEADERMAP = YES;
 				VALID_ARCHITECTURES = "x86_64 i386 armv6 armv7 armv7s arm64";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1997,6 +1972,7 @@
 		B3B7CE97441747EF99C11AFD /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = "";
@@ -2007,37 +1983,22 @@
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
-				);
 				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
-				INSTALL_PATH = "";
-				MACH_O_TYPE = staticlib;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu11'",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
-					"-fbracket-depth=264",
-				);
+				OTHER_CFLAGS = "-fbracket-depth=1024";
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
 				PRODUCT_BUNDLE_IDENTIFIER = net.multimarkdown.mmd6;
 				PRODUCT_NAME = libMultiMarkdown;
-				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				SUPPORTED_PLATFORMS = macosx;
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
-				USE_HEADERMAP = NO;
+				SYMROOT = build;
+				USE_HEADERMAP = YES;
 				VALID_ARCHITECTURES = "x86_64 i386 armv6 armv7 armv7s arm64";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -2084,6 +2045,7 @@
 		D7D94AE83FE6413F83634D22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = "";
@@ -2094,37 +2056,22 @@
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
-				);
 				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
-				INSTALL_PATH = "";
-				MACH_O_TYPE = staticlib;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu11'",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
-					"-fbracket-depth=264",
-				);
+				OTHER_CFLAGS = "-fbracket-depth=1024";
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "$(PUBLIC_HEADERS_FOLDER_PATH)/Private";
 				PRODUCT_BUNDLE_IDENTIFIER = net.multimarkdown.mmd6;
 				PRODUCT_NAME = libMultiMarkdown;
-				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				SUPPORTED_PLATFORMS = macosx;
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
-				USE_HEADERMAP = NO;
+				SYMROOT = build;
+				USE_HEADERMAP = YES;
 				VALID_ARCHITECTURES = "x86_64 i386 armv6 armv7 armv7s arm64";
 				WARNING_CFLAGS = (
 					"-Wmost",
