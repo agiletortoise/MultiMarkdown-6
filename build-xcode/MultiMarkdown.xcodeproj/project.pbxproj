@@ -124,76 +124,74 @@
 		37A74FE92289EC1800C120F7 /* token.c in Sources */ = {isa = PBXBuildFile; fileRef = 37A74FAA2289EC1800C120F7 /* token.c */; };
 		37A74FEA2289EC1800C120F7 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 37A74FAB2289EC1800C120F7 /* html.c */; };
 		37A74FEB2289EC1800C120F7 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 37A74FAB2289EC1800C120F7 /* html.c */; };
-		37A7500D2289EC3000C120F7 /* transclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEC2289EC2E00C120F7 /* transclude.h */; };
-		37A7500E2289EC3000C120F7 /* transclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEC2289EC2E00C120F7 /* transclude.h */; };
-		37A7500F2289EC3000C120F7 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FED2289EC2F00C120F7 /* html.h */; };
-		37A750102289EC3000C120F7 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FED2289EC2F00C120F7 /* html.h */; };
-		37A750112289EC3000C120F7 /* uuid.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEE2289EC2F00C120F7 /* uuid.h */; };
-		37A750122289EC3000C120F7 /* uuid.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEE2289EC2F00C120F7 /* uuid.h */; };
-		37A750132289EC3000C120F7 /* miniz.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEF2289EC2F00C120F7 /* miniz.h */; };
-		37A750142289EC3000C120F7 /* miniz.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEF2289EC2F00C120F7 /* miniz.h */; };
-		37A750152289EC3000C120F7 /* object_pool.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF02289EC2F00C120F7 /* object_pool.h */; };
-		37A750162289EC3000C120F7 /* object_pool.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF02289EC2F00C120F7 /* object_pool.h */; };
-		37A750172289EC3000C120F7 /* opml-parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF12289EC2F00C120F7 /* opml-parser.h */; };
-		37A750182289EC3000C120F7 /* opml-parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF12289EC2F00C120F7 /* opml-parser.h */; };
-		37A750192289EC3000C120F7 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF22289EC2F00C120F7 /* token.h */; };
-		37A7501A2289EC3000C120F7 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF22289EC2F00C120F7 /* token.h */; };
-		37A7501B2289EC3000C120F7 /* epub.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF32289EC2F00C120F7 /* epub.h */; };
-		37A7501C2289EC3000C120F7 /* epub.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF32289EC2F00C120F7 /* epub.h */; };
-		37A7501D2289EC3000C120F7 /* opendocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF42289EC2F00C120F7 /* opendocument.h */; };
-		37A7501E2289EC3000C120F7 /* opendocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF42289EC2F00C120F7 /* opendocument.h */; };
-		37A7501F2289EC3000C120F7 /* opml-lexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF52289EC2F00C120F7 /* opml-lexer.h */; };
-		37A750202289EC3000C120F7 /* opml-lexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF52289EC2F00C120F7 /* opml-lexer.h */; };
-		37A750212289EC3000C120F7 /* critic_markup.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF62289EC2F00C120F7 /* critic_markup.h */; };
-		37A750222289EC3000C120F7 /* critic_markup.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF62289EC2F00C120F7 /* critic_markup.h */; };
-		37A750232289EC3000C120F7 /* memoir.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF72289EC2F00C120F7 /* memoir.h */; };
-		37A750242289EC3000C120F7 /* memoir.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF72289EC2F00C120F7 /* memoir.h */; };
-		37A750252289EC3000C120F7 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF82289EC2F00C120F7 /* file.h */; };
-		37A750262289EC3000C120F7 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF82289EC2F00C120F7 /* file.h */; };
-		37A750272289EC3000C120F7 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF92289EC2F00C120F7 /* zip.h */; };
-		37A750282289EC3000C120F7 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF92289EC2F00C120F7 /* zip.h */; };
-		37A750292289EC3000C120F7 /* mmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFA2289EC2F00C120F7 /* mmd.h */; };
-		37A7502A2289EC3000C120F7 /* mmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFA2289EC2F00C120F7 /* mmd.h */; };
-		37A7502B2289EC3000C120F7 /* uthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFB2289EC2F00C120F7 /* uthash.h */; };
-		37A7502C2289EC3000C120F7 /* uthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFB2289EC2F00C120F7 /* uthash.h */; };
-		37A7502D2289EC3000C120F7 /* aho-corasick.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFC2289EC2F00C120F7 /* aho-corasick.h */; };
-		37A7502E2289EC3000C120F7 /* aho-corasick.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFC2289EC2F00C120F7 /* aho-corasick.h */; };
-		37A7502F2289EC3000C120F7 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFD2289EC2F00C120F7 /* parser.h */; };
-		37A750302289EC3000C120F7 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFD2289EC2F00C120F7 /* parser.h */; };
-		37A750312289EC3000C120F7 /* lexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFE2289EC2F00C120F7 /* lexer.h */; };
-		37A750322289EC3000C120F7 /* lexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFE2289EC2F00C120F7 /* lexer.h */; };
-		37A750342289EC3000C120F7 /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFF2289EC2F00C120F7 /* libMultiMarkdown.h */; };
-		37A750352289EC3000C120F7 /* i18n.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750002289EC2F00C120F7 /* i18n.h */; };
-		37A750362289EC3000C120F7 /* i18n.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750002289EC2F00C120F7 /* i18n.h */; };
-		37A750372289EC3000C120F7 /* opml-reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750012289EC2F00C120F7 /* opml-reader.h */; };
-		37A750382289EC3000C120F7 /* opml-reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750012289EC2F00C120F7 /* opml-reader.h */; };
-		37A750392289EC3000C120F7 /* token_pairs.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750022289EC3000C120F7 /* token_pairs.h */; };
-		37A7503A2289EC3000C120F7 /* token_pairs.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750022289EC3000C120F7 /* token_pairs.h */; };
-		37A7503B2289EC3000C120F7 /* opml.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750032289EC3000C120F7 /* opml.h */; };
-		37A7503C2289EC3000C120F7 /* opml.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750032289EC3000C120F7 /* opml.h */; };
-		37A7503D2289EC3000C120F7 /* latex.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750042289EC3000C120F7 /* latex.h */; };
-		37A7503E2289EC3000C120F7 /* latex.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750042289EC3000C120F7 /* latex.h */; };
-		37A7503F2289EC3000C120F7 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750052289EC3000C120F7 /* writer.h */; };
-		37A750402289EC3000C120F7 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750052289EC3000C120F7 /* writer.h */; };
-		37A750412289EC3000C120F7 /* beamer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750062289EC3000C120F7 /* beamer.h */; };
-		37A750422289EC3000C120F7 /* beamer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750062289EC3000C120F7 /* beamer.h */; };
-		37A750432289EC3000C120F7 /* opendocument-content.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750072289EC3000C120F7 /* opendocument-content.h */; };
-		37A750442289EC3000C120F7 /* opendocument-content.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750072289EC3000C120F7 /* opendocument-content.h */; };
-		37A750452289EC3000C120F7 /* char.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750082289EC3000C120F7 /* char.h */; };
-		37A750462289EC3000C120F7 /* char.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750082289EC3000C120F7 /* char.h */; };
-		37A750472289EC3000C120F7 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750092289EC3000C120F7 /* stack.h */; };
-		37A750482289EC3000C120F7 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750092289EC3000C120F7 /* stack.h */; };
-		37A750492289EC3000C120F7 /* d_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500A2289EC3000C120F7 /* d_string.h */; };
-		37A7504A2289EC3000C120F7 /* d_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500A2289EC3000C120F7 /* d_string.h */; };
-		37A7504B2289EC3000C120F7 /* textbundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500B2289EC3000C120F7 /* textbundle.h */; };
-		37A7504C2289EC3000C120F7 /* textbundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500B2289EC3000C120F7 /* textbundle.h */; };
-		37A7504D2289EC3000C120F7 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500C2289EC3000C120F7 /* scanners.h */; };
-		37A7504E2289EC3000C120F7 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500C2289EC3000C120F7 /* scanners.h */; };
-		37A750542289ECFC00C120F7 /* d_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750512289ECFC00C120F7 /* d_string.h */; };
-		37A750552289ECFC00C120F7 /* d_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750512289ECFC00C120F7 /* d_string.h */; };
-		37A750572289ECFC00C120F7 /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750522289ECFC00C120F7 /* libMultiMarkdown.h */; };
-		37A750582289ECFC00C120F7 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750532289ECFC00C120F7 /* token.h */; };
-		37A750592289ECFC00C120F7 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750532289ECFC00C120F7 /* token.h */; };
+		37A7500D2289EC3000C120F7 /* transclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEC2289EC2E00C120F7 /* transclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7500E2289EC3000C120F7 /* transclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEC2289EC2E00C120F7 /* transclude.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7500F2289EC3000C120F7 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FED2289EC2F00C120F7 /* html.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750102289EC3000C120F7 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FED2289EC2F00C120F7 /* html.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750112289EC3000C120F7 /* uuid.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEE2289EC2F00C120F7 /* uuid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750122289EC3000C120F7 /* uuid.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEE2289EC2F00C120F7 /* uuid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750132289EC3000C120F7 /* miniz.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEF2289EC2F00C120F7 /* miniz.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750142289EC3000C120F7 /* miniz.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FEF2289EC2F00C120F7 /* miniz.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750152289EC3000C120F7 /* object_pool.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF02289EC2F00C120F7 /* object_pool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750162289EC3000C120F7 /* object_pool.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF02289EC2F00C120F7 /* object_pool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750172289EC3000C120F7 /* opml-parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF12289EC2F00C120F7 /* opml-parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750182289EC3000C120F7 /* opml-parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF12289EC2F00C120F7 /* opml-parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750192289EC3000C120F7 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF22289EC2F00C120F7 /* token.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7501A2289EC3000C120F7 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF22289EC2F00C120F7 /* token.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7501B2289EC3000C120F7 /* epub.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF32289EC2F00C120F7 /* epub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7501C2289EC3000C120F7 /* epub.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF32289EC2F00C120F7 /* epub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7501D2289EC3000C120F7 /* opendocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF42289EC2F00C120F7 /* opendocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7501E2289EC3000C120F7 /* opendocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF42289EC2F00C120F7 /* opendocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7501F2289EC3000C120F7 /* opml-lexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF52289EC2F00C120F7 /* opml-lexer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750202289EC3000C120F7 /* opml-lexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF52289EC2F00C120F7 /* opml-lexer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750212289EC3000C120F7 /* critic_markup.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF62289EC2F00C120F7 /* critic_markup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750222289EC3000C120F7 /* critic_markup.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF62289EC2F00C120F7 /* critic_markup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750232289EC3000C120F7 /* memoir.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF72289EC2F00C120F7 /* memoir.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750242289EC3000C120F7 /* memoir.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF72289EC2F00C120F7 /* memoir.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750252289EC3000C120F7 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF82289EC2F00C120F7 /* file.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750262289EC3000C120F7 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF82289EC2F00C120F7 /* file.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750272289EC3000C120F7 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF92289EC2F00C120F7 /* zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750282289EC3000C120F7 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FF92289EC2F00C120F7 /* zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750292289EC3000C120F7 /* mmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFA2289EC2F00C120F7 /* mmd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7502A2289EC3000C120F7 /* mmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFA2289EC2F00C120F7 /* mmd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7502B2289EC3000C120F7 /* uthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFB2289EC2F00C120F7 /* uthash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7502C2289EC3000C120F7 /* uthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFB2289EC2F00C120F7 /* uthash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7502D2289EC3000C120F7 /* aho-corasick.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFC2289EC2F00C120F7 /* aho-corasick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7502E2289EC3000C120F7 /* aho-corasick.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFC2289EC2F00C120F7 /* aho-corasick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7502F2289EC3000C120F7 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFD2289EC2F00C120F7 /* parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750302289EC3000C120F7 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFD2289EC2F00C120F7 /* parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750312289EC3000C120F7 /* lexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFE2289EC2F00C120F7 /* lexer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750322289EC3000C120F7 /* lexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A74FFE2289EC2F00C120F7 /* lexer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750352289EC3000C120F7 /* i18n.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750002289EC2F00C120F7 /* i18n.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750362289EC3000C120F7 /* i18n.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750002289EC2F00C120F7 /* i18n.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750372289EC3000C120F7 /* opml-reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750012289EC2F00C120F7 /* opml-reader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750382289EC3000C120F7 /* opml-reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750012289EC2F00C120F7 /* opml-reader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750392289EC3000C120F7 /* token_pairs.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750022289EC3000C120F7 /* token_pairs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7503A2289EC3000C120F7 /* token_pairs.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750022289EC3000C120F7 /* token_pairs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7503B2289EC3000C120F7 /* opml.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750032289EC3000C120F7 /* opml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7503C2289EC3000C120F7 /* opml.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750032289EC3000C120F7 /* opml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7503D2289EC3000C120F7 /* latex.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750042289EC3000C120F7 /* latex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7503E2289EC3000C120F7 /* latex.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750042289EC3000C120F7 /* latex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7503F2289EC3000C120F7 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750052289EC3000C120F7 /* writer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750402289EC3000C120F7 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750052289EC3000C120F7 /* writer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750412289EC3000C120F7 /* beamer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750062289EC3000C120F7 /* beamer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750422289EC3000C120F7 /* beamer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750062289EC3000C120F7 /* beamer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750432289EC3000C120F7 /* opendocument-content.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750072289EC3000C120F7 /* opendocument-content.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750442289EC3000C120F7 /* opendocument-content.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750072289EC3000C120F7 /* opendocument-content.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750452289EC3000C120F7 /* char.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750082289EC3000C120F7 /* char.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750462289EC3000C120F7 /* char.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750082289EC3000C120F7 /* char.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750472289EC3000C120F7 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750092289EC3000C120F7 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750482289EC3000C120F7 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750092289EC3000C120F7 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750492289EC3000C120F7 /* d_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500A2289EC3000C120F7 /* d_string.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7504A2289EC3000C120F7 /* d_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500A2289EC3000C120F7 /* d_string.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7504B2289EC3000C120F7 /* textbundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500B2289EC3000C120F7 /* textbundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7504C2289EC3000C120F7 /* textbundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500B2289EC3000C120F7 /* textbundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7504D2289EC3000C120F7 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500C2289EC3000C120F7 /* scanners.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A7504E2289EC3000C120F7 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A7500C2289EC3000C120F7 /* scanners.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A750572289ECFC00C120F7 /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750522289ECFC00C120F7 /* libMultiMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37F1380B2289EE2E00046A27 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F1380A2289EE2D00046A27 /* version.h */; };
+		37F1380C2289EE2E00046A27 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F1380A2289EE2D00046A27 /* version.h */; };
+		37F138102289F14C00046A27 /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F1380F2289F14C00046A27 /* libMultiMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7B1687ECFBF446EB2383AFD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E531D6377274A1AA8D3D3AB /* main.c */; };
 		BCFA4855BC4E445C846DAE2C /* d_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 58DBE4ECC1054019B56E2E46 /* d_string.c */; };
 /* End PBXBuildFile section */
@@ -320,6 +318,8 @@
 		37A750512289ECFC00C120F7 /* d_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = d_string.h; path = Sources/libMultiMarkdown/include/d_string.h; sourceTree = "<group>"; };
 		37A750522289ECFC00C120F7 /* libMultiMarkdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libMultiMarkdown.h; path = Sources/libMultiMarkdown/include/libMultiMarkdown.h; sourceTree = "<group>"; };
 		37A750532289ECFC00C120F7 /* token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = token.h; path = Sources/libMultiMarkdown/include/token.h; sourceTree = "<group>"; };
+		37F1380A2289EE2D00046A27 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = build/version.h; sourceTree = "<group>"; };
+		37F1380F2289F14C00046A27 /* libMultiMarkdown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libMultiMarkdown.h; path = Sources/libMultiMarkdown/include/libMultiMarkdown.h; sourceTree = "<group>"; };
 		39972AA4626740D491DE39FC /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		58DBE4ECC1054019B56E2E46 /* d_string.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = d_string.c; path = Sources/libMultiMarkdown/d_string.c; sourceTree = SOURCE_ROOT; };
 		5EA56AD7426A408FAEBD25A3 /* libMultiMarkdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = libMultiMarkdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -428,6 +428,7 @@
 		ACCB129292B24C03B7B6B4C6 = {
 			isa = PBXGroup;
 			children = (
+				37F1380F2289F14C00046A27 /* libMultiMarkdown.h */,
 				F58AFE27EE86491B84BE08CB /* Sources */,
 				3E5AAF9B5AB64220A873BD2A /* Resources */,
 				3706BAAC1F0E7920003A66F5 /* libMultiMarkdown-iOS */,
@@ -466,6 +467,7 @@
 		DB480B22BF5145209EA7FFFC /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				37F1380A2289EE2D00046A27 /* version.h */,
 				37A750512289ECFC00C120F7 /* d_string.h */,
 				37A750522289ECFC00C120F7 /* libMultiMarkdown.h */,
 				37A750532289ECFC00C120F7 /* token.h */,
@@ -523,22 +525,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A750482289EC3000C120F7 /* stack.h in Headers */,
-				37A750342289EC3000C120F7 /* libMultiMarkdown.h in Headers */,
 				37A750242289EC3000C120F7 /* memoir.h in Headers */,
 				37A750402289EC3000C120F7 /* writer.h in Headers */,
 				37A750322289EC3000C120F7 /* lexer.h in Headers */,
 				37A750142289EC3000C120F7 /* miniz.h in Headers */,
-				37A750592289ECFC00C120F7 /* token.h in Headers */,
 				37A7502E2289EC3000C120F7 /* aho-corasick.h in Headers */,
 				37A7501E2289EC3000C120F7 /* opendocument.h in Headers */,
 				37A750282289EC3000C120F7 /* zip.h in Headers */,
+				37A750572289ECFC00C120F7 /* libMultiMarkdown.h in Headers */,
 				37A750572289ECFC00C120F7 /* libMultiMarkdown.h in Headers */,
 				37A7501C2289EC3000C120F7 /* epub.h in Headers */,
 				37A750202289EC3000C120F7 /* opml-lexer.h in Headers */,
 				37A750462289EC3000C120F7 /* char.h in Headers */,
 				37A750102289EC3000C120F7 /* html.h in Headers */,
 				37A7503C2289EC3000C120F7 /* opml.h in Headers */,
-				3706BAE81F0E7B07003A66F5 /* libMultiMarkdown_iOS.h in Headers */,
 				37A7504E2289EC3000C120F7 /* scanners.h in Headers */,
 				37A750222289EC3000C120F7 /* critic_markup.h in Headers */,
 				37A7502A2289EC3000C120F7 /* mmd.h in Headers */,
@@ -550,7 +550,6 @@
 				37A750122289EC3000C120F7 /* uuid.h in Headers */,
 				37A7501A2289EC3000C120F7 /* token.h in Headers */,
 				37A7503A2289EC3000C120F7 /* token_pairs.h in Headers */,
-				37A750552289ECFC00C120F7 /* d_string.h in Headers */,
 				37A750262289EC3000C120F7 /* file.h in Headers */,
 				37A7504A2289EC3000C120F7 /* d_string.h in Headers */,
 				37A7504C2289EC3000C120F7 /* textbundle.h in Headers */,
@@ -559,6 +558,10 @@
 				37A750382289EC3000C120F7 /* opml-reader.h in Headers */,
 				37A750422289EC3000C120F7 /* beamer.h in Headers */,
 				37A750302289EC3000C120F7 /* parser.h in Headers */,
+				3706BAE81F0E7B07003A66F5 /* libMultiMarkdown_iOS.h in Headers */,
+				37F1380C2289EE2E00046A27 /* version.h in Headers */,
+				37A7501A2289EC3000C120F7 /* token.h in Headers */,
+				37A7504A2289EC3000C120F7 /* d_string.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,13 +569,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F138102289F14C00046A27 /* libMultiMarkdown.h in Headers */,
+				37F1380B2289EE2E00046A27 /* version.h in Headers */,
 				37A750252289EC3000C120F7 /* file.h in Headers */,
 				37A7504B2289EC3000C120F7 /* textbundle.h in Headers */,
 				37A750412289EC3000C120F7 /* beamer.h in Headers */,
 				37A7501B2289EC3000C120F7 /* epub.h in Headers */,
 				37A750132289EC3000C120F7 /* miniz.h in Headers */,
-				37A750582289ECFC00C120F7 /* token.h in Headers */,
-				37A750542289ECFC00C120F7 /* d_string.h in Headers */,
 				37A7501D2289EC3000C120F7 /* opendocument.h in Headers */,
 				37A750232289EC3000C120F7 /* memoir.h in Headers */,
 				37A7501F2289EC3000C120F7 /* opml-lexer.h in Headers */,
@@ -600,6 +603,8 @@
 				37A750172289EC3000C120F7 /* opml-parser.h in Headers */,
 				37A750372289EC3000C120F7 /* opml-reader.h in Headers */,
 				37A7504D2289EC3000C120F7 /* scanners.h in Headers */,
+				37A750492289EC3000C120F7 /* d_string.h in Headers */,
+				37A750192289EC3000C120F7 /* token.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
