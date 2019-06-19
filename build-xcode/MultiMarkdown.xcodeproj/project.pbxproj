@@ -886,18 +886,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -924,11 +924,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
@@ -936,23 +936,23 @@
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
 					"'-std=gnu11'",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-I$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"-I$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"-I$(PROJECT_DIR)/Sources/multimarkdown",
+					"-I$(PROJECT_DIR)/test",
+					"-I$(PROJECT_DIR)/build-xcode",
 					"-fbracket-depth=264",
 				);
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/RelWithDebInfo/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
+					"$(PROJECT_DIR)/build-xcode/RelWithDebInfo/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
 					"-lcurl",
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = multimarkdown;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -974,18 +974,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1007,18 +1007,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1045,7 +1045,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
@@ -1083,18 +1083,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = RUN_TESTS;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1136,7 +1136,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode/build";
 			};
 			name = RelWithDebInfo;
 		};
@@ -1151,18 +1151,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1464,18 +1464,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = package;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1502,34 +1502,34 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"'-std=gnu11'",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-I$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"-I$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"-I$(PROJECT_DIR)/Sources/multimarkdown",
+					"-I$(PROJECT_DIR)/test",
+					"-I$(PROJECT_DIR)/build-xcode",
 					"-fbracket-depth=264",
 				);
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/Debug/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
+					"$(PROJECT_DIR)/build-xcode/Debug/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
 					"-lcurl",
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = multimarkdown;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1551,18 +1551,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = package;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1584,18 +1584,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = package;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1617,18 +1617,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = RUN_TESTS;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1650,18 +1650,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = RUN_TESTS;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1683,18 +1683,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1721,11 +1721,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
@@ -1733,23 +1733,23 @@
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
 					"'-std=gnu11'",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-I$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"-I$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"-I$(PROJECT_DIR)/Sources/multimarkdown",
+					"-I$(PROJECT_DIR)/test",
+					"-I$(PROJECT_DIR)/build-xcode",
 					"-fbracket-depth=264",
 				);
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/Release/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
+					"$(PROJECT_DIR)/build-xcode/Release/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
 					"-lcurl",
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = multimarkdown;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1791,7 +1791,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode/build";
 			};
 			name = MinSizeRel;
 		};
@@ -1811,11 +1811,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
@@ -1823,23 +1823,23 @@
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
 					"'-std=gnu11'",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"-I/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"-I$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"-I$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"-I$(PROJECT_DIR)/Sources/multimarkdown",
+					"-I$(PROJECT_DIR)/MultiMarkdown-6/test",
+					"-I/$(PROJECT_DIR)/build-xcode",
 					"-fbracket-depth=264",
 				);
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/MinSizeRel/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
+					"$(PROJECT_DIR)/build-xcode/MinSizeRel/libMultiMarkdown.framework/Versions/A/libMultiMarkdown",
 					"-lcurl",
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = multimarkdown;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1861,18 +1861,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1894,18 +1894,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = RUN_TESTS;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1948,7 +1948,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode/build";
 			};
 			name = Debug;
 		};
@@ -1963,18 +1963,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = package;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -2001,7 +2001,7 @@
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
@@ -2044,7 +2044,7 @@
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
@@ -2082,18 +2082,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -2120,7 +2120,7 @@
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INFOPLIST_FILE = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/build-xcode/CMakeFiles/libMultiMarkdown.dir/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
@@ -2178,7 +2178,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode/build";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode/build";
 			};
 			name = Release;
 		};
@@ -2193,18 +2193,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/libMultiMarkdown/include",
-					"/Users/greg/sources-shared/MultiMarkdown-6/Sources/multimarkdown",
-					"/Users/greg/sources-shared/MultiMarkdown-6/test",
-					"/Users/greg/sources-shared/MultiMarkdown-6/build-xcode",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown",
+					"$(PROJECT_DIR)/Sources/libMultiMarkdown/include",
+					"$(PROJECT_DIR)/Sources/multimarkdown",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/build-xcode",
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/greg/sources-shared/MultiMarkdown-6/build-xcode";
+				SYMROOT = "$(PROJECT_DIR)/build-xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
