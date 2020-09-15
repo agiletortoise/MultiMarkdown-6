@@ -60,6 +60,7 @@
 /* Begin PBXBuildFile section */
 		0628D3F38A6D49C0BCC6F389 /* argtable3.c in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB937BA44F46758BB3B372 /* argtable3.c */; };
 		3706BAE81F0E7B07003A66F5 /* libMultiMarkdown_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 3706BAAD1F0E7920003A66F5 /* libMultiMarkdown_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37771ED422C5584100F34A40 /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750522289ECFC00C120F7 /* libMultiMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37A74FAC2289EC1800C120F7 /* opml-lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 37A74F8C2289EC1600C120F7 /* opml-lexer.c */; };
 		37A74FAD2289EC1800C120F7 /* opml-lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 37A74F8C2289EC1600C120F7 /* opml-lexer.c */; };
 		37A74FAE2289EC1800C120F7 /* transclude.c in Sources */ = {isa = PBXBuildFile; fileRef = 37A74F8D2289EC1600C120F7 /* transclude.c */; };
@@ -191,7 +192,6 @@
 		37A750572289ECFC00C120F7 /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A750522289ECFC00C120F7 /* libMultiMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37F1380B2289EE2E00046A27 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F1380A2289EE2D00046A27 /* version.h */; };
 		37F1380C2289EE2E00046A27 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F1380A2289EE2D00046A27 /* version.h */; };
-		37F138102289F14C00046A27 /* libMultiMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F1380F2289F14C00046A27 /* libMultiMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7B1687ECFBF446EB2383AFD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E531D6377274A1AA8D3D3AB /* main.c */; };
 		BCFA4855BC4E445C846DAE2C /* d_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 58DBE4ECC1054019B56E2E46 /* d_string.c */; };
 /* End PBXBuildFile section */
@@ -319,7 +319,6 @@
 		37A750522289ECFC00C120F7 /* libMultiMarkdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libMultiMarkdown.h; path = Sources/libMultiMarkdown/include/libMultiMarkdown.h; sourceTree = "<group>"; };
 		37A750532289ECFC00C120F7 /* token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = token.h; path = Sources/libMultiMarkdown/include/token.h; sourceTree = "<group>"; };
 		37F1380A2289EE2D00046A27 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = build/version.h; sourceTree = "<group>"; };
-		37F1380F2289F14C00046A27 /* libMultiMarkdown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libMultiMarkdown.h; path = Sources/libMultiMarkdown/include/libMultiMarkdown.h; sourceTree = "<group>"; };
 		39972AA4626740D491DE39FC /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		58DBE4ECC1054019B56E2E46 /* d_string.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = d_string.c; path = Sources/libMultiMarkdown/d_string.c; sourceTree = SOURCE_ROOT; };
 		5EA56AD7426A408FAEBD25A3 /* libMultiMarkdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = libMultiMarkdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -428,7 +427,6 @@
 		ACCB129292B24C03B7B6B4C6 = {
 			isa = PBXGroup;
 			children = (
-				37F1380F2289F14C00046A27 /* libMultiMarkdown.h */,
 				F58AFE27EE86491B84BE08CB /* Sources */,
 				3E5AAF9B5AB64220A873BD2A /* Resources */,
 				3706BAAC1F0E7920003A66F5 /* libMultiMarkdown-iOS */,
@@ -566,8 +564,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37F138102289F14C00046A27 /* libMultiMarkdown.h in Headers */,
 				37F1380B2289EE2E00046A27 /* version.h in Headers */,
+				37771ED422C5584100F34A40 /* libMultiMarkdown.h in Headers */,
 				37A750252289EC3000C120F7 /* file.h in Headers */,
 				37A7504B2289EC3000C120F7 /* textbundle.h in Headers */,
 				37A750412289EC3000C120F7 /* beamer.h in Headers */,
@@ -663,8 +661,7 @@
 		B75A357246134F3DA4374F47 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					3706BAAA1F0E7920003A66F5 = {
 						CreatedOnToolsVersion = 9.0;
@@ -1117,6 +1114,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1227,7 +1225,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "build-xcode/libMultiMarkdown-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1294,7 +1292,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "build-xcode/libMultiMarkdown-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1363,7 +1361,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "build-xcode/libMultiMarkdown-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1432,7 +1430,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "build-xcode/libMultiMarkdown-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1774,6 +1772,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1931,6 +1930,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2162,6 +2162,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
